@@ -1,5 +1,5 @@
-import "@kitware/vtk.js/Rendering/Profiles/Geometry";
-import "@kitware/vtk.js/Rendering/Misc/RenderingAPIs";
+import "@kitware/vtk.js/Rendering/Profiles/Geometry"; // 다양한 프로필 클래스를 등록한다. 이 외에도 profiles에 여럿 사용가능한 프로필이 있다.
+import "@kitware/vtk.js/Rendering/Misc/RenderingAPIs"; // WebGL와 WebGPU backends를 등록한다.
 
 import vtkActor from "@kitware/vtk.js/Rendering/Core/Actor";
 import vtkConeSource from "@kitware/vtk.js/Filters/Sources/ConeSource";
@@ -9,6 +9,7 @@ import vtkRenderWindow from "@kitware/vtk.js/Rendering/Core/RenderWindow";
 import vtkRenderWindowInteractor from "@kitware/vtk.js/Rendering/Core/RenderWindowInteractor";
 import vtkInteractorStyleTrackballCamera from "@kitware/vtk.js/Interaction/Style/InteractorStyleTrackballCamera";
 
+// 1. Create RenderWindow
 function createRenderWindow(el) {
   const renderWindow = vtkRenderWindow.newInstance();
   const renderer = vtkRenderer.newInstance();
@@ -36,7 +37,7 @@ function createRenderWindow(el) {
     renderWindow,
     renderer,
     interactor,
-    apiSpecificRenderWindow
+    apiSpecificRenderWindow,
   };
 }
 
