@@ -1,1 +1,0 @@
-# vtkjs_practice
