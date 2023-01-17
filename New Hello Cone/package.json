@@ -2,8 +2,9 @@
   "name": "new-hello-cone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
+  "main": "src/index",
+  "typings": "src/index",
+  "scripts": {  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
