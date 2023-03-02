@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  entry: "./src/cone_colored.js",
+  entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "cone_colored_bundle.js",
+    filename: "index_bundle.js",
   },
 };
