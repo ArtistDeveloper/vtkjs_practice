@@ -79,7 +79,7 @@ pipeline.actor.getProperty().setColor(1, 0, 1);
 renderer.resetCamera();
 renderWindow.render();
 
-global.cone = pipeline.coneSource.getOutputData();
+global.cone = pipeline.coneSource.getOutputData(); // 없어도 동작하는데 이 역할은 무엇일까
 
 
 
