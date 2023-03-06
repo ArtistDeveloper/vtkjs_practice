@@ -79,9 +79,7 @@ pipeline.actor.getProperty().setColor(1, 0, 1);
 renderer.resetCamera();
 renderWindow.render();
 
-global.cone = pipeline.coneSource.getOutputData(); // 없어도 동작하는데 이 역할은 무엇일까
-
-
-
+// 없어도 동작하긴 함. 네임스페이스, 전역객체,  d.ts에 대해 알아보면 좀 더 이해가 깊어질 것 같음.
+global.cone = pipeline.coneSource.getOutputData(); 
 
 
